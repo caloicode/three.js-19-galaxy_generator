@@ -3,7 +3,6 @@ import restart from "vite-plugin-restart";
 
 export default defineConfig({
   root: "src/", // Source files live here (includes index.html)
-  base: "/three.js-19-galaxy_generator/",
   publicDir: "../static/", // Static assets to be copied as-is during build
 
   server: {
@@ -12,7 +11,7 @@ export default defineConfig({
   },
 
   build: {
-    outDir: "../docs", // Build output directory
+    outDir: "../dist", // Build output directory
     emptyOutDir: true, // Clears /dist before new build
     sourcemap: true, // Generates sourcemaps for debugging
   },
