@@ -12,11 +12,11 @@ export default defineConfig({
   },
 
   build: {
-    outDir: "../dist", // Build output directory
+    outDir: "../docs", // Build output directory
     emptyOutDir: true, // Clears /dist before new build
     sourcemap: true, // Generates sourcemaps for debugging
   },
-  
+
   plugins: [
     restart({
       restart: ["../static/**"], // Restart dev server when static assets change
